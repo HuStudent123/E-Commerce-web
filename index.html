@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Colorful E-Commerce</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Welcome to ColorCart</h1>
+    <p>Your One-Stop Online Shop</p>
+  </header>
+
+  <section class="intro">
+    <h2>What is an E-Commerce Website?</h2>
+    <p>
+      An e-commerce website is a platform that allows businesses and individuals to buy and sell goods and services over the internet. 
+      These websites are convenient, efficient, and offer access to a vast array of products from the comfort of your home or mobile device.
+    </p>
+    <p>
+      Our e-commerce website, ColorCart, was developed to demonstrate how modern online stores function. It features a visually engaging homepage, product listings, 
+      a customer form for placing orders, a shopping cart that updates dynamically, and essential informational sections like 'About Us' and 'Privacy Policy.'
+    </p>
+    <p>
+      This project is ideal for learning and showcasing HTML, CSS, and JavaScript skills in a practical and creative way. 
+      It's a reflection of how user interaction, design, and backend logic come together in real-world web development.
+    </p>
+    <img src="images/ecommerce_explain.jpg" alt="E-commerce Explanation">
+  </section>
+
+  <section class="products" id="products">
+    <h2>Featured Products</h2>
+    <div class="product" onclick="addToCart('Smart Watch')">Smart Watch - $50</div>
+    <div class="product" onclick="addToCart('Laptop')">Laptop - $800</div>
+    <div class="product" onclick="addToCart('Phone')">Phone - $400</div>
+    <div class="product" onclick="addToCart('Lipstick')">Lipstick - $20</div>
+    <div class="product" onclick="addToCart('Shampoo')">Shampoo - $10</div>
+    <div class="product" onclick="addToCart('Apples')">Apples - $5</div>
+    <div class="product" onclick="addToCart('Juice')">Juice - $3</div>
+    <div class="product" onclick="addToCart('Sneakers')">Sneakers - $45</div>
+    <div class="product" onclick="addToCart('Wigs')">Wigs - $60</div>
+    <div class="product" onclick="addToCart('T-shirt')">T-shirt - $15</div>
+  </section>
+
+  <section class="form-section">
+    <h2>Place Your Order</h2>
+    <form id="order-form">
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="text" placeholder="Shipping Address" required />
+      <button type="submit">Submit Order</button>
+    </form>
+  </section>
+
+  <section class="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+  </section>
+
+  <footer>
+    <div class="about">
+      <h3>About Us</h3>
+      <p>ColorCart is your go-to destination for fast, affordable, and quality shopping online.</p>
+    </div>
+    <div class="privacy">
+      <h3>Privacy Policy</h3>
+      <p>We respect your privacy. Your data is used only for order processing and secure payment.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
